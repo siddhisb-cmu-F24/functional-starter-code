@@ -1,6 +1,7 @@
 This repository contains two independent starter files:
-	•	DbStarter: demonstrates how to connect to a MongoDB database, perform simple insert/read/update/delete operations, and print results to the console.
-	•	ApiStarter: demonstrates how to make HTTP requests, parse JSON, and expose simple REST endpoints using the Suave web framework.
+
+1. DbStarter: demonstrates how to connect to a MongoDB database, perform simple insert/read/update/delete operations, and print results to the console.
+2. ApiStarter: demonstrates how to make HTTP requests, parse JSON, and expose simple REST endpoints using the Suave web framework.
 
 Under DbStarter and ApiStarter use dotnet run to run the Program.fs file.
 
