@@ -3,7 +3,11 @@ open MongoDB.Bson
 open MongoDB.Driver
 
 // Connect directly to your MongoDB Atlas cluster
-let connectionString = "mongodb+srv://db_user:dbUserPassword@cluster0.z1ihkte.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+let connectionString =
+    match Environment.GetEnvironmentVariable("MONGODB_URI") with
+    | null | "" -> "mongodb+srv://db_user:dbUserPassword@cluster0.z1ihkte.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0" // TODO: replace
+    | s -> s
+    
 let client = new MongoClient(connectionString)
 let db = client.GetDatabase("arbitragegainer")
 let collection = db.GetCollection<BsonDocument>("cross_traded_pairs")
@@ -19,18 +23,17 @@ let normalize (s: string) = s.Trim().ToUpperInvariant()
 let makeDocument (pair: string) =
     BsonDocument([
         BsonElement("pair", BsonString(normalize pair))
-        BsonElement("insertedAt", BsonDateTime(DateTime.UtcNow))
+        BsonElement("createdAt", BsonDateTime(DateTime.UtcNow))
     ])
 
 // CRUD operations
 let insertPair pair =
     try
+    //For production, recommended switch to InsertOneAsync/UpdateOneAsync + F# task/async
         collection.InsertOne(makeDocument pair)
-        printfn "Inserted %s" (normalize pair)
+        true
     with
-    | :? MongoWriteException as ex when ex.WriteError.Category = ServerErrorCategory.DuplicateKey ->
-        printfn "%s already exists" (normalize pair)
-    | e -> printfn "Insert error: %s" e.Message
+    | :? MongoWriteException as ex when ex.WriteError.Category = ServerErrorCategory.DuplicateKey -> false
 
 let readAll () =
     collection.Find(FilterDefinition<BsonDocument>.Empty).ToList()
@@ -38,20 +41,17 @@ let readAll () =
     |> Seq.toList
 
 let updatePair pair =
-    let filter = Builders<BsonDocument>.Filter.Eq("pair", BsonString(normalize pair))
+    let filter = Builders<BsonDocument>.Filter.Eq("pair", normalize pair)
     let update =
         Builders<BsonDocument>.Update
             .Set("updatedAt", BsonDateTime(DateTime.UtcNow))
-    collection.UpdateOne(filter, update) |> ignore
-    printfn "Updated %s" (normalize pair)
+    let res = collection.UpdateOne(filter, update)
+    res.MatchedCount > 0L
 
 let deletePair pair =
-    let filter = Builders<BsonDocument>.Filter.Eq("pair", BsonString(normalize pair))
-    let result = collection.DeleteOne(filter)
-    if result.DeletedCount = 1L then
-        printfn "Deleted %s" (normalize pair)
-    else
-        printfn "No record found for %s" (normalize pair)
+    let filter = Builders<BsonDocument>.Filter.Eq("pair", normalize pair)
+    let res = collection.DeleteOne(filter)
+    res.DeletedCount = 1L
 
 // Demo
 [<EntryPoint>]
@@ -71,5 +71,6 @@ let main _ =
 
     printfn "\nRemaining pairs:"
     readAll () |> List.iter (printfn " - %s")
+
 
     0
