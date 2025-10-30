@@ -10,7 +10,7 @@ open System.Reflection
 [<assembly: System.Reflection.AssemblyCompanyAttribute("DbStarter")>]
 [<assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")>]
 [<assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")>]
-[<assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")>]
+[<assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f70ed77a9f8ff1ca02712ce9be269baf33dd7350")>]
 [<assembly: System.Reflection.AssemblyProductAttribute("DbStarter")>]
 [<assembly: System.Reflection.AssemblyTitleAttribute("DbStarter")>]
 [<assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")>]

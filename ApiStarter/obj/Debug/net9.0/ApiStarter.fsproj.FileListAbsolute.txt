@@ -4,14 +4,6 @@
 /Users/siddhisabanerjee/functional-starter-code/ApiStarter/bin/Debug/net9.0/ApiStarter.dll
 /Users/siddhisabanerjee/functional-starter-code/ApiStarter/bin/Debug/net9.0/ApiStarter.pdb
 /Users/siddhisabanerjee/functional-starter-code/ApiStarter/bin/Debug/net9.0/FSharp.Core.dll
-/Users/siddhisabanerjee/functional-starter-code/ApiStarter/bin/Debug/net9.0/FSharp.Data.dll
-/Users/siddhisabanerjee/functional-starter-code/ApiStarter/bin/Debug/net9.0/FSharp.Data.Csv.Core.dll
-/Users/siddhisabanerjee/functional-starter-code/ApiStarter/bin/Debug/net9.0/FSharp.Data.Html.Core.dll
-/Users/siddhisabanerjee/functional-starter-code/ApiStarter/bin/Debug/net9.0/FSharp.Data.Http.dll
-/Users/siddhisabanerjee/functional-starter-code/ApiStarter/bin/Debug/net9.0/FSharp.Data.Json.Core.dll
-/Users/siddhisabanerjee/functional-starter-code/ApiStarter/bin/Debug/net9.0/FSharp.Data.Runtime.Utilities.dll
-/Users/siddhisabanerjee/functional-starter-code/ApiStarter/bin/Debug/net9.0/FSharp.Data.WorldBank.Core.dll
-/Users/siddhisabanerjee/functional-starter-code/ApiStarter/bin/Debug/net9.0/FSharp.Data.Xml.Core.dll
 /Users/siddhisabanerjee/functional-starter-code/ApiStarter/bin/Debug/net9.0/Suave.dll
 /Users/siddhisabanerjee/functional-starter-code/ApiStarter/bin/Debug/net9.0/cs/FSharp.Core.resources.dll
 /Users/siddhisabanerjee/functional-starter-code/ApiStarter/bin/Debug/net9.0/de/FSharp.Core.resources.dll
@@ -36,3 +28,4 @@
 /Users/siddhisabanerjee/functional-starter-code/ApiStarter/obj/Debug/net9.0/ApiStarter.pdb
 /Users/siddhisabanerjee/functional-starter-code/ApiStarter/obj/Debug/net9.0/ApiStarter.genruntimeconfig.cache
 /Users/siddhisabanerjee/functional-starter-code/ApiStarter/obj/Debug/net9.0/ref/ApiStarter.dll
+/Users/siddhisabanerjee/functional-starter-code/ApiStarter/obj/Debug/net9.0/ApiStarter.sourcelink.json

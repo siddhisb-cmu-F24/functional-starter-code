@@ -15,6 +15,5 @@
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <PkgFSharp_Core Condition=" '$(PkgFSharp_Core)' == '' ">/Users/siddhisabanerjee/.nuget/packages/fsharp.core/9.0.101</PkgFSharp_Core>
     <PkgSuave Condition=" '$(PkgSuave)' == '' ">/Users/siddhisabanerjee/.nuget/packages/suave/2.6.2</PkgSuave>
-    <PkgFSharp_Data Condition=" '$(PkgFSharp_Data)' == '' ">/Users/siddhisabanerjee/.nuget/packages/fsharp.data/6.6.0</PkgFSharp_Data>
   </PropertyGroup>
 </Project>

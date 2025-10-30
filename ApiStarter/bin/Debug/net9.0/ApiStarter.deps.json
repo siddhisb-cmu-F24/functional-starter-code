@@ -9,7 +9,6 @@
       "ApiStarter/1.0.0": {
         "dependencies": {
           "FSharp.Core": "9.0.101",
-          "FSharp.Data": "6.6.0",
           "Suave": "2.6.2"
         },
         "runtime": {
@@ -65,113 +64,6 @@
           }
         }
       },
-      "FSharp.Data/6.6.0": {
-        "dependencies": {
-          "FSharp.Core": "9.0.101",
-          "FSharp.Data.Csv.Core": "6.6.0",
-          "FSharp.Data.Html.Core": "6.6.0",
-          "FSharp.Data.Http": "6.6.0",
-          "FSharp.Data.Json.Core": "6.6.0",
-          "FSharp.Data.Runtime.Utilities": "6.6.0",
-          "FSharp.Data.WorldBank.Core": "6.6.0",
-          "FSharp.Data.Xml.Core": "6.6.0"
-        },
-        "runtime": {
-          "lib/netstandard2.0/FSharp.Data.dll": {
-            "assemblyVersion": "6.6.0.0",
-            "fileVersion": "6.6.0.0"
-          }
-        }
-      },
-      "FSharp.Data.Csv.Core/6.6.0": {
-        "dependencies": {
-          "FSharp.Core": "9.0.101",
-          "FSharp.Data.Runtime.Utilities": "6.6.0"
-        },
-        "runtime": {
-          "lib/netstandard2.0/FSharp.Data.Csv.Core.dll": {
-            "assemblyVersion": "6.6.0.0",
-            "fileVersion": "6.6.0.0"
-          }
-        }
-      },
-      "FSharp.Data.Html.Core/6.6.0": {
-        "dependencies": {
-          "FSharp.Core": "9.0.101",
-          "FSharp.Data.Csv.Core": "6.6.0",
-          "FSharp.Data.Runtime.Utilities": "6.6.0"
-        },
-        "runtime": {
-          "lib/netstandard2.0/FSharp.Data.Html.Core.dll": {
-            "assemblyVersion": "6.6.0.0",
-            "fileVersion": "6.6.0.0"
-          }
-        }
-      },
-      "FSharp.Data.Http/6.6.0": {
-        "dependencies": {
-          "FSharp.Core": "9.0.101"
-        },
-        "runtime": {
-          "lib/netstandard2.0/FSharp.Data.Http.dll": {
-            "assemblyVersion": "6.6.0.0",
-            "fileVersion": "6.6.0.0"
-          }
-        }
-      },
-      "FSharp.Data.Json.Core/6.6.0": {
-        "dependencies": {
-          "FSharp.Core": "9.0.101",
-          "FSharp.Data.Http": "6.6.0",
-          "FSharp.Data.Runtime.Utilities": "6.6.0"
-        },
-        "runtime": {
-          "lib/netstandard2.0/FSharp.Data.Json.Core.dll": {
-            "assemblyVersion": "6.6.0.0",
-            "fileVersion": "6.6.0.0"
-          }
-        }
-      },
-      "FSharp.Data.Runtime.Utilities/6.6.0": {
-        "dependencies": {
-          "FSharp.Core": "9.0.101",
-          "FSharp.Data.Http": "6.6.0"
-        },
-        "runtime": {
-          "lib/netstandard2.0/FSharp.Data.Runtime.Utilities.dll": {
-            "assemblyVersion": "6.6.0.0",
-            "fileVersion": "6.6.0.0"
-          }
-        }
-      },
-      "FSharp.Data.WorldBank.Core/6.6.0": {
-        "dependencies": {
-          "FSharp.Core": "9.0.101",
-          "FSharp.Data.Http": "6.6.0",
-          "FSharp.Data.Json.Core": "6.6.0",
-          "FSharp.Data.Runtime.Utilities": "6.6.0"
-        },
-        "runtime": {
-          "lib/netstandard2.0/FSharp.Data.WorldBank.Core.dll": {
-            "assemblyVersion": "6.6.0.0",
-            "fileVersion": "6.6.0.0"
-          }
-        }
-      },
-      "FSharp.Data.Xml.Core/6.6.0": {
-        "dependencies": {
-          "FSharp.Core": "9.0.101",
-          "FSharp.Data.Http": "6.6.0",
-          "FSharp.Data.Json.Core": "6.6.0",
-          "FSharp.Data.Runtime.Utilities": "6.6.0"
-        },
-        "runtime": {
-          "lib/netstandard2.0/FSharp.Data.Xml.Core.dll": {
-            "assemblyVersion": "6.6.0.0",
-            "fileVersion": "6.6.0.0"
-          }
-        }
-      },
       "Suave/2.6.2": {
         "dependencies": {
           "FSharp.Core": "9.0.101"
@@ -197,62 +89,6 @@
       "sha512": "sha512-/nPn98/Z0mxSZEeFJOJLhGI76aQbe3LIDD0LtJpN8HRosV1samTsMO/nHX/Xehe3czjJss3THPt8IZLB/6sBtg==",
       "path": "fsharp.core/9.0.101",
       "hashPath": "fsharp.core.9.0.101.nupkg.sha512"
-    },
-    "FSharp.Data/6.6.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-AC87/VZV1iGrnK1uG6QhX22HZARlFiCqdlckzPDgdE3+fzc0ZNRR3Y4ny5vbLvfDj2rjFoJdmRZy6kzI1C/sQQ==",
-      "path": "fsharp.data/6.6.0",
-      "hashPath": "fsharp.data.6.6.0.nupkg.sha512"
-    },
-    "FSharp.Data.Csv.Core/6.6.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-gbmHT+XraE1OjUyf/+bmIaluoMMj/34MC5IX0QNWr+K8fu+UjKg854p+fkG5JkzWej0+46CTV7hW/CWP425naA==",
-      "path": "fsharp.data.csv.core/6.6.0",
-      "hashPath": "fsharp.data.csv.core.6.6.0.nupkg.sha512"
-    },
-    "FSharp.Data.Html.Core/6.6.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-YxImykk5fUxw+rwvD26JfZYn/OAUataebsUobXu8KzkLtl/5fOhiPqpI54jAT4ysv2wHD5coCp30+5UsQXqxBQ==",
-      "path": "fsharp.data.html.core/6.6.0",
-      "hashPath": "fsharp.data.html.core.6.6.0.nupkg.sha512"
-    },
-    "FSharp.Data.Http/6.6.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-7nFDLYPqEps/F3Ay65Xm3YvS3OmARYB24xYv1CszOqurTZ76wM9vnsvyeFOMcCKXA+QgwK+eCa8cgyavmR1YxA==",
-      "path": "fsharp.data.http/6.6.0",
-      "hashPath": "fsharp.data.http.6.6.0.nupkg.sha512"
-    },
-    "FSharp.Data.Json.Core/6.6.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-VhLkZwyzeMWsJHivY4GjLqIWh+gIm0rWW0BBlAh1M7XzmmumbPLDehUqOh6Nkm1R+N8iBhFgj7HBq6bmQzGnZA==",
-      "path": "fsharp.data.json.core/6.6.0",
-      "hashPath": "fsharp.data.json.core.6.6.0.nupkg.sha512"
-    },
-    "FSharp.Data.Runtime.Utilities/6.6.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-iLkCY0mQGxuIE2sEIFFOov9ZmWPwlQ0Jq51Xgqv+e0hbAPf2p4OaGp/DR4ye6VQCyVzHVCp9XyJQeHOhoWCQvA==",
-      "path": "fsharp.data.runtime.utilities/6.6.0",
-      "hashPath": "fsharp.data.runtime.utilities.6.6.0.nupkg.sha512"
-    },
-    "FSharp.Data.WorldBank.Core/6.6.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-Tg6Hk0+61McNviq+zATBhIDoyslV07hZjYsrzz6IHagbze+1JNiz8FCpwsHh0uAzkdNUZK2/qsrHtMQvM0lpdg==",
-      "path": "fsharp.data.worldbank.core/6.6.0",
-      "hashPath": "fsharp.data.worldbank.core.6.6.0.nupkg.sha512"
-    },
-    "FSharp.Data.Xml.Core/6.6.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-Z7U4mO0FHT5uHOYRLSK67izqJrCSvWpjcDPRQkJmYB5ge0sRfHWoKV8b4ttHLmpEg/eAdu64u00nITxpbZm+CA==",
-      "path": "fsharp.data.xml.core/6.6.0",
-      "hashPath": "fsharp.data.xml.core.6.6.0.nupkg.sha512"
     },
     "Suave/2.6.2": {
       "type": "package",

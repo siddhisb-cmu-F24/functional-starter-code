@@ -47,11 +47,6 @@
               "version": "[9.0.101, )",
               "generatePathProperty": true
             },
-            "FSharp.Data": {
-              "target": "Package",
-              "version": "[6.6.0, )",
-              "generatePathProperty": true
-            },
             "Suave": {
               "target": "Package",
               "version": "[2.6.2, )",

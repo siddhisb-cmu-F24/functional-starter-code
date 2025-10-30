@@ -15,7 +15,7 @@ let collection = db.GetCollection<BsonDocument>("cross_traded_pairs")
 // Ensure a unique index on the "pair" field
 let ensureUniqueIndex () =
     let keys = Builders<BsonDocument>.IndexKeys.Ascending("pair")
-    let options = CreateIndexOptions(Name = "uniq_pair", Unique = Nullable true)
+    let options = CreateIndexOptions(Name = "uniq_pair", Unique = Nullable(true))
     collection.Indexes.CreateOne(CreateIndexModel<BsonDocument>(keys, options)) |> ignore
 
 // Helper functions
@@ -29,7 +29,7 @@ let makeDocument (pair: string) =
 // CRUD operations
 let insertPair pair =
     try
-    //For production, recommended switch to InsertOneAsync/UpdateOneAsync + F# task/async
+        // For production consider InsertOneAsync/UpdateOneAsync with F# async/task
         collection.InsertOne(makeDocument pair)
         true
     with

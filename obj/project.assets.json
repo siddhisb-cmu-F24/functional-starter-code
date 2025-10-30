@@ -700,11 +700,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/siddhisabanerjee/DbStarter/DbStarter.fsproj",
+      "projectUniqueName": "/Users/siddhisabanerjee/functional-starter-code/DbStarter.fsproj",
       "projectName": "DbStarter",
-      "projectPath": "/Users/siddhisabanerjee/DbStarter/DbStarter.fsproj",
+      "projectPath": "/Users/siddhisabanerjee/functional-starter-code/DbStarter.fsproj",
       "packagesPath": "/Users/siddhisabanerjee/.nuget/packages/",
-      "outputPath": "/Users/siddhisabanerjee/DbStarter/obj/",
+      "outputPath": "/Users/siddhisabanerjee/functional-starter-code/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/siddhisabanerjee/.nuget/NuGet/NuGet.Config"
