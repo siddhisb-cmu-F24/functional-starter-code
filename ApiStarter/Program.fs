@@ -16,6 +16,7 @@ let krakenAssetPairsUrl =
 
 // Function to fetch data from a URL
 // Note: no JSON libraries here; we return the raw Kraken payload
+// Note: creating a new HttpClient per request for simplicity; in production, reuse a single shared HttpClient instance
 let httpGet (url: string) = async {
     use client = new HttpClient()
     client.Timeout <- TimeSpan.FromSeconds 10.0
