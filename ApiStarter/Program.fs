@@ -18,7 +18,9 @@ let krakenAssetPairsUrl =
 let httpGet (url: string) = async {
     use client = new HttpClient()
     client.Timeout <- TimeSpan.FromSeconds 10.0
+    // sends the HTTP request, waits for network response headers
     let! resp = client.GetAsync(url) |> Async.AwaitTask
+    // waits for full body stream of the response and reads it
     let! body = resp.Content.ReadAsStringAsync() |> Async.AwaitTask
     return
         match resp.IsSuccessStatusCode with
