@@ -32,6 +32,7 @@ let httpGet (url: string) = async {
 let main _ =
     let app =
         choose [
+        // Compose WebParts sequentially: >=> is Suave's equivalent of the >> operator for functions
             GET >=> path "/healthz" >=> OK "ok"
             GET >=> path "/pairs/kraken" >=> fun ctx ->
                 async {
